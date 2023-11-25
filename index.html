@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GPTITITI</title>
+    <script src="https://unpkg.com/htmx.org@1.9.9" integrity="sha384-QFjmbokDn2DjBjq+fM+8LUIVrAgqcNW2s0PjAxHETgRn9l4fvX31ZxDxvwQnyMOX" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav>
+        <button hx-post="/new_chat.php" hx-target="#chats" hx-swap="afterbegin"> <!-- afterbegin makes it so that the new chat is added to the top of the list -->
+            + New Chat
+        </button>
+
+        <div id="chats"></div>
+    </nav>
+    
+    <main>
+
+    </main>
+
+</body>
+</html>
